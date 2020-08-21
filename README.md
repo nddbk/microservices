@@ -14,7 +14,7 @@ A set of regular microservices for practice and reference.
 
 
 Service | Type | Port | Status
---|--|--|--  
+--|--|--|--
 Front-end GUI | View | 7777 | Not started yet
 Load balancer with Nginx | Routing | 7711|  Not started yet
 Load balancer with Traefic | Routing | 7721 |  Not started yet
@@ -29,36 +29,36 @@ Authentication/Authorization service in Python | Security | 7553 | Not started y
 Authentication/Authorization service in Golang | Security | 7453 | Not started yet
 Authentication/Authorization service in Vlang | Security | 7353 | Not started yet
 Authentication/Authorization service in Deno | Security | 7253 | Not started yet
-FeedParser service in Node.js | Regular | 7654 | Not started yet
-FeedParser service in Python | Regular | 7554 | Not started yet
-FeedParser service in Golang | Regular | 7454 | Basic implementation
-FeedParser service in Vlang | Regular | 7354 | Not started yet
-FeedParser service in Deno | Regular | 7254 | Not started yet
-ArticleParser service in Node.js | Regular | 7655 | Not started yet
-ArticleParser service in Python | Regular | 7555 | Not started yet
-ArticleParser service in Golang | Regular | 7455 | Basic implementation
-ArticleParser service in Vlang | Regular | 7355 | Not started yet
-ArticleParser service in Deno | Regular | 7255 | Not started yet
-Notification service in Node.js | Regular | 7656| Not started yet
-Notification service in Python | Regular | 7556| Not started yet
-Notification service in Golang | Regular | 7456| Not started yet
-Notification service in Vlang | Regular | 7356| Not started yet
-Notification service in Deno | Regular | 7256| Not started yet
-Email service in Node.js | Regular | 7657 | Not started yet
-Email service in Python | Regular | 7557 | Not started yet
-Email service in Golang | Regular | 7457 | Not started yet
-Email service in Vlang | Regular | 7357 | Not started yet
-Email service in Deno | Regular | 7257 | Not started yet
+Feed Parser service in Node.js | Regular | 7654 | Not started yet
+Feed Parser service in Python | Regular | 7554 | Not started yet
+Feed Parser service in Golang | Regular | 7454 | Basic implementation
+Feed Parser service in Vlang | Regular | 7354 | Not started yet
+Feed Parser service in Deno | Regular | 7254 | Not started yet
+Article Parser service in Node.js | Regular | 7655 | Not started yet
+Article Parser service in Python | Regular | 7555 | Not started yet
+Article Parser service in Golang | Regular | 7455 | Basic implementation
+Article Parser service in Vlang | Regular | 7355 | Not started yet
+Article Parser service in Deno | Regular | 7255 | Not started yet
+Notification Pusher service in Node.js | Regular | 7656| Not started yet
+Notification Pusher service in Python | Regular | 7556| Not started yet
+Notification Pusher service in Golang | Regular | 7456| Not started yet
+Notification Pusher service in Vlang | Regular | 7356| Not started yet
+Notification Pusher service in Deno | Regular | 7256| Not started yet
+Email Sender service in Node.js | Regular | 7657 | Not started yet
+Email Sender service in Python | Regular | 7557 | Not started yet
+Email Sender service in Golang | Regular | 7457 | Not started yet
+Email Sender service in Vlang | Regular | 7357 | Not started yet
+Email Sender service in Deno | Regular | 7257 | Not started yet
 Image Store service in Node.js | Regular | 7658 | Not started yet
 Image Store service in Python | Regular | 7558 | Not started yet
 Image Store service in Golang | Regular | 7458 | Not started yet
 Image Store service in Vlang | Regular | 7358 | Not started yet
 Image Store service in Deno | Regular | 7258 | Not started yet
-Video Upload & Stream service in Node.js | Regular | 7659 | Not started yet
-Video Upload & Stream service in Python | Regular | 7559 | Not started yet
-Video Upload & Stream service in Golang | Regular | 7459 | Not started yet
-Video Upload & Stream service in Vlang | Regular | 7359 | Not started yet
-Video Upload & Stream service in Deno | Regular | 7259 | Not started yet
+Video Store service in Node.js | Regular | 7659 | Not started yet
+Video Store service in Python | Regular | 7559 | Not started yet
+Video Store service in Golang | Regular | 7459 | Not started yet
+Video Store service in Vlang | Regular | 7359 | Not started yet
+Video Store service in Deno | Regular | 7259 | Not started yet
 Face Detection service in Node.js | CV | 7660 | Not started yet
 Face Detection service in Python | CV | 7560 | Not started yet
 Image Classification service in Node.js | CV | 7661 | Not started yet
@@ -85,13 +85,55 @@ Sentiment Analysis service in Golang | NLP | 7564 | Not started yet
 And more.
 
 
-# Standards
+# Rules and standards
+
+### Naming convention
+
+Each of service should be stored within a separate folder. These folders must be named in dash-case style by the format of {SERVICE NAME}-{LANGUAGE}, for examples:
+
+- `article-parser-node`
+- `video-store-deno`
+- `feed-parser-py`
+- `email-sender-go`
+- `notification-pusher-v`
+
+### Service.json file
+
+Each of service must have a `service.json` file to declare name, version and some basic configs.
+
+
+```json
+{
+  "name": "Feed Parser service in Python",
+  "version": "1.0.0",
+  "host": "0.0.0.0",
+  "port": 7554
+}
+```
+
+These values should be used to introduce service at its starting time:
+
+![](https://i.imgur.com/8yAeSNF.png)
+
+
+### Dockerfile & docker-compose.yaml
+
+All services must be able to containerized.
+
+The images should be carefully selected. Good to use the minimal ones, or those are designed for microservice.
+
+
+### Coding convention
 
 - Node.js, JavaScript, Deno: [ESLint recommended rules](https://eslint.org/docs/rules/) and [Google JavaScript Style guide](https://google.github.io/styleguide/jsguide.html)
 - Python: PEP8
-- Golang:
-- Vlang:
+- Golang: *not defined yet*
+- Vlang: *not defined yet*
+
+### Output format
+
 - JSON output format: [jsend](https://github.com/omniti-labs/jsend) and [Google JSON Style Guide](https://google.github.io/styleguide/jsoncstyleguide.xml)
+
 
 # License
 
