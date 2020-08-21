@@ -67,10 +67,10 @@ Named Entity Recognition service in Node.js | NLP | 7662 | Not started yet
 Named Entity Recognition service in Python | NLP | 7562 | Not started yet
 Text Classification service in Node.js | NLP | 7663 | Not started yet
 Text Classification service in Python | NLP | 7563 | Not started yet
-Text Classification service in Golang | NLP | 7563 | Not started yet
+Text Classification service in Golang | NLP | 7463 | Not started yet
 Sentiment Analysis service in Node.js | NLP | 7664 | Not started yet
 Sentiment Analysis service in Python | NLP | 7564 | Not started yet
-Sentiment Analysis service in Golang | NLP | 7564 | Not started yet
+Sentiment Analysis service in Golang | NLP | 7464 | Not started yet
 
 
 # Tech stacks
