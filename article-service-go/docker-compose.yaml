@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  feed_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: article-service-go
+    container_name: article-service-go
+    ports:
+      - 7455:7455
+    volumes:
+      - .:/go/src/app
+    working_dir: /go/src/app
+    environment:
+      - HOST=
+      - PORT=
+    restart: always
+    command: >
+      /go/bin/app

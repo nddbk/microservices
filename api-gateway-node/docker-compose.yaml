@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  api_gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api-gateway-node
+    container_name: api-gateway-node
+    ports:
+      - 7652:7652
+    working_dir: /app
+    environment:
+      - HOST=
+      - PORT=
+      - FEEDPARSER_SERVICE_URL=
+      - ARTICLEPARSER_SERVICE_URL=
+    networks:
+      - micro-net
+    restart: always
+    command: >
+      node ./server.js
+networks:
+  micro-net:
+    external: true

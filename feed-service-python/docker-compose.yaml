@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  feed_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: feed-service-py
+    container_name: feed-service-py
+    ports:
+      - 7554:7554
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - HOST=
+      - PORT=
+    restart: always
+    command: >
+      poetry run python3 -u ./server.py

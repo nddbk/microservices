@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "api-gateway",
+  "description": "API Gateway in Node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndaidong/microservices"
+  },
+  "author": "@ndaidong",
+  "engines": {
+    "node": ">= 10.14.2"
+  },
+  "main": "./server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest --verbose --coverage=true --detectOpenHandles",
+    "posttest": "rm -rf ./outputs"
+  },
+  "dependencies": {
+    "bellajs": "^9.1.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "eslint-config-goes": "^1.1.8",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "license": "MIT"
+}
