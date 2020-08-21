@@ -77,12 +77,22 @@ Sentiment Analysis service in Golang | NLP | 7564 | Not started yet
 
 - Programming languages: Node.js, Deno, Python, Golang, Vlang
 - Databases: MongoDB, Postgres, SQLite, Redis/KeyDB, InfluxDB
-- Job queue: bull, celary, rqueue
+- Job queue: bull, celary, rqueue, etc
 - Testing tools: Jest, pytest
 - DevOps: Docker, Drone, nginx, Traefic, HAProxy
 - Machine Learning: TensorFlow, PyTorch, spaCy, fasttext
+-
 
-And more.
+And not only that, of course :)
+
+
+# Contributions
+
+If you would like to learn more about micro services, or a new programming language, or one of the above tech stacks, feel free to contribute.
+
+
+
+To keep things consistent for others, please refer the next section.
 
 
 # Rules and standards
@@ -121,6 +131,11 @@ These values should be used to introduce service at its starting time:
 All services must be able to containerized.
 
 The images should be carefully selected. Good to use the minimal ones, or those are designed for microservice.
+
+
+### Functional Programming
+
+It's recommended to apply Functional Programming style here.
 
 
 ### Coding convention
