@@ -114,10 +114,10 @@ Each of service must have a `service.json` file to declare name, version and som
 
 ```json
 {
-  "name": "Feed Parser service in Python",
+  "name": "Feed Parser service in Go",
   "version": "1.0.0",
   "host": "0.0.0.0",
-  "port": 7554
+  "port": 7454
 }
 ```
 
