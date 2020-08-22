@@ -1,20 +1,17 @@
 version: "3"
 
 services:
-  feed_service:
+  feed_parser_py:
     build:
       context: .
       dockerfile: Dockerfile
-    image: feed-service-py
-    container_name: feed-service-py
+    image: feed-parser-py
+    container_name: feed-parser-py
     ports:
       - 7554:7554
     volumes:
       - .:/app
     working_dir: /app
-    environment:
-      - HOST=
-      - PORT=
     networks:
       - micro-net
     restart: always

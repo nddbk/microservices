@@ -5,16 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: feed-service-go
-    container_name: feed-service-go
+    image: feed-parser-go
+    container_name: feed-parser-go
     ports:
       - 7454:7454
     volumes:
       - .:/go/src/app
     working_dir: /go/src/app
-    environment:
-      - HOST=
-      - PORT=
     networks:
       - micro-net
     restart: always

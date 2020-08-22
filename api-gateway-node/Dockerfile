@@ -8,5 +8,3 @@ RUN mkdir /app
 WORKDIR /app
 ADD . /app
 RUN npm install
-
-EXPOSE 7553
