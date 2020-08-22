@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  api_gateway_deno:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-gateway-deno
+    ports:
+      - 7252:7252
+    working_dir: /app
+    networks:
+      - micro-net
+    restart: always
+    command: >
+      deno run --allow-net --allow-read app.ts
+
+networks:
+  micro-net:
+    external: true
