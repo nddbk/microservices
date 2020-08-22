@@ -132,6 +132,13 @@ All services must be able to containerized.
 
 The images should be carefully selected. Good to use the minimal ones, or those are designed for microservice.
 
+The containers should be configured to run within the same virtual network named `micro-net`, so please create it at first.
+
+
+```bash
+docker network create micro-net
+```
+
 
 ### Functional Programming
 

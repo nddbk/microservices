@@ -15,6 +15,12 @@ services:
     environment:
       - HOST=
       - PORT=
+    networks:
+      - micro-net
     restart: always
     command: >
       poetry run python3 -u ./server.py
+
+networks:
+  micro-net:
+    external: true

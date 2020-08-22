@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:12.18-slim
 
 ENV NODE_ENV production
 ENV PATH /app/node_modules/.bin:$PATH

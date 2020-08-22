@@ -10,6 +10,7 @@ const {
   version,
   host,
   port,
+  endpointMap,
 } = require('./service.json');
 
 const ENV = process.env || {};
@@ -43,17 +44,12 @@ app.get('/', (req, res) => {
   });
 });
 
-// add proxy for FeedParser service
-app.use(createProxyMiddleware(FEEDPARSER_SERVICE_URL, {onError, onProxyReq, onProxyRes: (proxyRes, req) => {
-  proxyRes.headers['service'] = 'FeedParser service';
-  info(`${req.method} ${req.path} --> Done`);
-}, logLevel: 'error'}));
 
-// add proxy for ArticleParser service
-app.use(createProxyMiddleware(ARTICLEPARSER_SERVICE_URL, {onError, onProxyReq, onProxyRes: (proxyRes, req) => {
-  proxyRes.headers['service'] = 'ArticleParser service';
-  info(`${req.method} ${req.path} --> Done`);
-}, logLevel: 'error'}));
+Object.keys(endpointMap).forEach((key) => {
+  const target = endpointMap[key];
+  app.use(`/${key}`, createProxyMiddleware({target, onError, onProxyReq, logLevel: 'error'}));
+  info(`API Gateway mapped endpoint from /${key} to ${target}/${key}`);
+});
 
 
 app.use((req, res) => {
