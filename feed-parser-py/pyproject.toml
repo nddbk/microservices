@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "feed-service"
 version = "0.1.0"
-description = "Feed Service"
+description = "Feed Parser service"
 authors = ["Dong Nguyen <ndaidong@gmail.com>"]
 
 [tool.poetry.dependencies]

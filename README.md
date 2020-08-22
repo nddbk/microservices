@@ -19,11 +19,11 @@ Front-end GUI | View | 7777 | Not started yet
 Load balancer with Nginx | Routing | 7711|  Not started yet
 Load balancer with Traefic | Routing | 7721 |  Not started yet
 Load balancer with HAProxy | Routing | 7731 |  Not started yet
-API Gateway in Node.js | Routing | 7652 |  Implementing
+API Gateway in Node.js | Routing | 7652 |  Basic implementation
 API Gateway in Python | Routing | 7552 |  Not started yet
 API Gateway in Golang | Routing | 7452 |  Not started yet
 API Gateway in Vlang | Routing | 7352 |  Not started yet
-API Gateway in Deno | Routing | 7252 |  Implementing
+API Gateway in Deno | Routing | 7252 |  Basic implementation
 Authentication/Authorization service in Node.js | Security | 7653 | Not started yet
 Authentication/Authorization service in Python | Security | 7553 | Not started yet
 Authentication/Authorization service in Golang | Security | 7453 | Not started yet

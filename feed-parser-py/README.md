@@ -1,9 +1,10 @@
-## Feed Service
+# Feed Parser service in Python
 
+## Requirements
 
+- Python >= 3.6
 
-### Setup
-
+## Setup
 
 ```bash
 git clone git@github.com:ndaidong/feed-service-python.git feed-service
@@ -17,7 +18,7 @@ poetry run python3 server.py
 
 Running scripts directly requires [poetry](https://python-poetry.org/).
 
-### Test
+## Test
 
 Before running test, please close other instances of `server.py` to avoid port confliction.
 ```bash

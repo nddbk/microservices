@@ -1,22 +1,19 @@
 version: "3"
 
 services:
-  feed_parser_py:
+  api_gateway_deno:
     build:
       context: .
       dockerfile: Dockerfile
-    image: feed-parser-py
-    container_name: feed-parser-py
+    container_name: api-gateway-deno
     ports:
-      - 7554:7554
-    volumes:
-      - .:/app
+      - 7252:7252
     working_dir: /app
     networks:
       - micro-net
     restart: always
     command: >
-      poetry run python3 -u ./server.py
+      deno run --allow-net --allow-read app.ts
 
 networks:
   micro-net:

@@ -1,12 +1,12 @@
 version: "3"
 
 services:
-  feed_service:
+  article_parser_go:
     build:
       context: .
       dockerfile: Dockerfile
-    image: article-service-go
-    container_name: article-service-go
+    image: article-parser-go
+    container_name: article-parser-go
     ports:
       - 7455:7455
     volumes:
@@ -20,6 +20,7 @@ services:
     restart: always
     command: >
       /go/bin/app
+
 networks:
   micro-net:
     external: true
