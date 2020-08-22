@@ -13,10 +13,6 @@ const {
   endpointMap,
 } = require('./service.json');
 
-const ENV = process.env || {};
-const FEEDPARSER_SERVICE_URL = ENV.FEEDPARSER_SERVICE_URL;
-const ARTICLEPARSER_SERVICE_URL = ENV.ARTICLEPARSER_SERVICE_URL;
-
 const startAt = (new Date()).toUTCString();
 
 const app = express();
