@@ -15,6 +15,12 @@ services:
     environment:
       - HOST=
       - PORT=
+    networks:
+      - micro-net
     restart: always
     command: >
       /go/bin/app
+
+networks:
+  micro-net:
+    external: true

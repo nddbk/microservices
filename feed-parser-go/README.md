@@ -1,4 +1,4 @@
-# FeedParser service in Go
+# Feed Parser service in Go
 
 ## Requirements
 

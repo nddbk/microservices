@@ -25,7 +25,7 @@ with open('service.json', 'r') as fs:
 
 
 async def welcome(request):
-    info(f'GET /')
+    info('GET /')
     return JSONResponse({
         'service': service['name'],
         'version': service['version'],
@@ -34,7 +34,7 @@ async def welcome(request):
 
 
 async def parseFeed(request):
-    info(f'GET /feed')
+    info('GET /feed')
     url = request.query_params['url']
     info(f'Start parsing feed `{url}`...')
     success = f'Finish parsing feed from `{url}`'
