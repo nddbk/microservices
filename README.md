@@ -29,36 +29,36 @@ Authentication/Authorization service in Python | Security | 7553 | Not started y
 Authentication/Authorization service in Golang | Security | 7453 | Not started yet
 Authentication/Authorization service in Vlang | Security | 7353 | Not started yet
 Authentication/Authorization service in Deno | Security | 7253 | Not started yet
-Feed Parser service in Node.js | Regular | 7654 | Not started yet
-Feed Parser service in Python | Regular | 7554 | Not started yet
-Feed Parser service in Golang | Regular | 7454 | Basic implementation
-Feed Parser service in Vlang | Regular | 7354 | Not started yet
-Feed Parser service in Deno | Regular | 7254 | Not started yet
-Article Parser service in Node.js | Regular | 7655 | Not started yet
-Article Parser service in Python | Regular | 7555 | Not started yet
-Article Parser service in Golang | Regular | 7455 | Basic implementation
-Article Parser service in Vlang | Regular | 7355 | Not started yet
-Article Parser service in Deno | Regular | 7255 | Not started yet
-Notification Pusher service in Node.js | Regular | 7656| Not started yet
-Notification Pusher service in Python | Regular | 7556| Not started yet
-Notification Pusher service in Golang | Regular | 7456| Not started yet
-Notification Pusher service in Vlang | Regular | 7356| Not started yet
-Notification Pusher service in Deno | Regular | 7256| Not started yet
-Email Sender service in Node.js | Regular | 7657 | Not started yet
-Email Sender service in Python | Regular | 7557 | Not started yet
-Email Sender service in Golang | Regular | 7457 | Not started yet
-Email Sender service in Vlang | Regular | 7357 | Not started yet
-Email Sender service in Deno | Regular | 7257 | Not started yet
-Image Store service in Node.js | Regular | 7658 | Not started yet
-Image Store service in Python | Regular | 7558 | Not started yet
-Image Store service in Golang | Regular | 7458 | Not started yet
-Image Store service in Vlang | Regular | 7358 | Not started yet
-Image Store service in Deno | Regular | 7258 | Not started yet
-Video Store service in Node.js | Regular | 7659 | Not started yet
-Video Store service in Python | Regular | 7559 | Not started yet
-Video Store service in Golang | Regular | 7459 | Not started yet
-Video Store service in Vlang | Regular | 7359 | Not started yet
-Video Store service in Deno | Regular | 7259 | Not started yet
+Feed Parser service in Node.js | Extraction | 7654 | Not started yet
+Feed Parser service in Python | Extraction | 7554 | Not started yet
+Feed Parser service in Golang | Extraction | 7454 | Basic implementation
+Feed Parser service in Vlang | Extraction | 7354 | Not started yet
+Feed Parser service in Deno | Extraction | 7254 | Not started yet
+Article Parser service in Node.js | Extraction | 7655 | Not started yet
+Article Parser service in Python | Extraction | 7555 | Not started yet
+Article Parser service in Golang | Extraction | 7455 | Basic implementation
+Article Parser service in Vlang | Extraction | 7355 | Not started yet
+Article Parser service in Deno | Extraction | 7255 | Not started yet
+Notification Pusher service in Node.js | Event | 7656| Not started yet
+Notification Pusher service in Python | Event | 7556| Not started yet
+Notification Pusher service in Golang | Event | 7456| Not started yet
+Notification Pusher service in Vlang | Event | 7356| Not started yet
+Notification Pusher service in Deno | Event | 7256| Not started yet
+Email Sender service in Node.js | Event | 7657 | Not started yet
+Email Sender service in Python | Event | 7557 | Not started yet
+Email Sender service in Golang | Event | 7457 | Not started yet
+Email Sender service in Vlang | Event | 7357 | Not started yet
+Email Sender service in Deno | Event | 7257 | Not started yet
+Image Store service in Node.js | File | 7658 | Not started yet
+Image Store service in Python | File | 7558 | Not started yet
+Image Store service in Golang | File | 7458 | Not started yet
+Image Store service in Vlang | File | 7358 | Not started yet
+Image Store service in Deno | File | 7258 | Not started yet
+Video Store service in Node.js | File & Stream | 7659 | Not started yet
+Video Store service in Python | File & Stream | 7559 | Not started yet
+Video Store service in Golang | File & Stream | 7459 | Not started yet
+Video Store service in Vlang | File & Stream | 7359 | Not started yet
+Video Store service in Deno | File & Stream | 7259 | Not started yet
 Face Detection service in Node.js | CV | 7660 | Not started yet
 Face Detection service in Python | CV | 7560 | Not started yet
 Image Classification service in Node.js | CV | 7661 | Not started yet
@@ -75,13 +75,13 @@ Sentiment Analysis service in Golang | NLP | 7464 | Not started yet
 
 # Tech stacks
 
-- Programming languages: Node.js, Deno, Python, Golang, Vlang
+- Programming languages: [Node.js](https://nodejs.org/en/), [Deno](https://deno.land/), [Python](https://www.python.org/), [Golang](https://golang.org/), [Vlang](https://vlang.io/)
 - Databases: MongoDB, Postgres, SQLite, Redis/KeyDB, InfluxDB
 - Job queue: bull, celary, rqueue, etc
 - Testing tools: Jest, pytest
 - DevOps: Docker, Drone, nginx, Traefic, HAProxy
 - Machine Learning: TensorFlow, PyTorch, spaCy, fasttext
--
+
 
 And not only that, of course :)
 
@@ -121,7 +121,7 @@ Each of service must have a `service.json` file to declare name, version and som
 }
 ```
 
-These values should be used to introduce service at its starting time:
+These values should be used to introduce the service at its starting time:
 
 ![](https://i.imgur.com/8yAeSNF.png)
 
