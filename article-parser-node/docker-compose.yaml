@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  article_parser_node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: article-parser-node
+    container_name: article-parser-node
+    ports:
+      - 7655:7655
+    working_dir: /app
+    networks:
+      - micro-net
+    restart: always
+    command: >
+      node ./server.js
+
+networks:
+  micro-net:
+    external: true
