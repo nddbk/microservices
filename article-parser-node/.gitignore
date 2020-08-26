@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+*.debug
+
+# Runtime data
+*.pid
+*.seed
+
+node_modules
+coverage
+.nyc_output
+
+storage
+dist
+src/vendor
+
+yarn.lock
+coverage.lcov
+package-lock.json
+pnpm-lock.yaml
+
+.nuxt
+
+output
+examples/*/dist
