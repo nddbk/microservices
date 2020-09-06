@@ -7,8 +7,8 @@
 ## Setup
 
 ```bash
-git clone https://github.com/ndaidong/microservices.git microservices
-cd article-parser-py
+git clone https://github.com/ndaidong/microservices.git
+cd microservices/article-parser-py
 docker-compose up
 
 # or run directly with Python

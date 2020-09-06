@@ -7,8 +7,8 @@
 ## Setup
 
 ```bash
-git clone git@github.com:ndaidong/feed-service-python.git feed-service
-cd feed-service
+git clone https://github.com/ndaidong/microservices.git
+cd microservices/feed-parser-py
 docker-compose up
 
 # or run directly with Python
