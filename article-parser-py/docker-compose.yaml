@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  feed_parser_py:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: feed-parser-py
+    container_name: feed-parser-py
+    ports:
+      - 7554:7554
+    volumes:
+      - .:/app
+    working_dir: /app
+    networks:
+      - micro-net
+    restart: always
+    command: >
+      poetry run python3 -u ./server.py
+
+networks:
+  micro-net:
+    external: true
