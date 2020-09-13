@@ -34,10 +34,10 @@ async def welcome(request):
 
 
 async def parseArticle(request):
-    info('GET /feed')
+    info('GET /article')
     url = request.query_params['url']
-    info(f'Start parsing feed `{url}`...')
-    success = f'Finish parsing feed from `{url}`'
+    info(f'Start parsing article `{url}`...')
+    success = f'Finish parsing article from `{url}`'
     result = {
         'status': 'success',
         'message': success,
@@ -45,9 +45,8 @@ async def parseArticle(request):
         'data': None,
     }
     try:
-        data = await parse(url)
-        if isinstance(data, dict):
-            result['data'] = data
+        article = await parse(url)
+        result['data'] = article
     except Exception as err:
         message = f'Error while parsing feed from `{url}`'
         result['status'] = 'error'
@@ -67,17 +66,19 @@ def on_start():
 
 async def not_found(request, exc):
     path = request.url.path
+    status_code = exc.status_code
     return JSONResponse(dict(
         message=f'Oops! Endpoint "{path}" leads to nowhere',
-        status=400
-    ), status_code=exc.status_code)
+        status=status_code
+    ), status_code=status_code)
 
 
 async def server_error(request, exc):
+    status_code = exc.status_code
     return JSONResponse(dict(
         message='Something went wrong, please try again later',
-        status=500
-    ), status_code=exc.status_code)
+        status=status_code
+    ), status_code=status_code)
 
 exception_handlers = {
     404: not_found,
@@ -87,7 +88,7 @@ exception_handlers = {
 
 routes = [
     Route('/', endpoint=welcome, methods=['GET', 'POST']),
-    Route('/feed', endpoint=parseArticle, methods=['GET']),
+    Route('/article', endpoint=parseArticle, methods=['GET']),
 ]
 
 
