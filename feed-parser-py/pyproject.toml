@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "feed-service"
+name = "feed-parser-service"
 version = "0.1.0"
 description = "Feed Parser service"
 authors = ["Dong Nguyen <ndaidong@gmail.com>"]
