@@ -69,17 +69,15 @@ async def not_found(request, exc):
     path = request.url.path
     return JSONResponse(dict(
         message=f'Oops! Endpoint "{path}" leads to nowhere',
-        status=400,
-        status_code=exc.status_code
-    ))
+        status=400
+    ), status_code=exc.status_code)
 
 
 async def server_error(request, exc):
     return JSONResponse(dict(
         message='Something went wrong, please try again later',
-        status=500,
-        status_code=exc.status_code
-    ))
+        status=500
+    ), status_code=exc.status_code)
 
 exception_handlers = {
     404: not_found,
