@@ -35,7 +35,7 @@ Feed Parser service in Golang | Extraction | 7454 | Basic implementation
 Feed Parser service in Vlang | Extraction | 7354 | Not started yet
 Feed Parser service in Deno | Extraction | 7254 | Not started yet
 Article Parser service in Node.js | Extraction | 7655 | Basic implementation
-Article Parser service in Python | Extraction | 7555 | Not started yet
+Article Parser service in Python | Extraction | 7555 | Basic implementation
 Article Parser service in Golang | Extraction | 7455 | Basic implementation
 Article Parser service in Vlang | Extraction | 7355 | Not started yet
 Article Parser service in Deno | Extraction | 7255 | Not started yet
