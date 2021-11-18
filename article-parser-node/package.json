@@ -12,21 +12,20 @@
   },
   "main": "./server.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "standard .",
     "pretest": "npm run lint",
-    "test": "jest --verbose --coverage=true --detectOpenHandles --forceExit",
+    "test": "NODE_ENV=test jest --verbose --coverage=true --detectOpenHandles --forceExit",
     "posttest": "rm -rf ./outputs"
   },
   "dependencies": {
-    "article-parser": "^4.2.3",
-    "bellajs": "^9.2.0",
+    "article-parser": "^4.2.11",
+    "bellajs": "^9.3.0",
     "express": "^4.17.1",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "eslint-config-goes": "^1.1.8",
-    "jest": "^26.4.1",
-    "supertest": "^4.0.2"
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6"
   },
   "license": "MIT"
 }

@@ -23,7 +23,7 @@ Running scripts directly requires [poetry](https://python-poetry.org/).
 
 | Method | Endpoint  |
 |--------|---------- |
-| GET | http://0.0.0.0:7555/feed?url={RSS_URL} |
+| GET | http://0.0.0.0:7554/feed?url={RSS_URL} |
 
 
 ## Test
