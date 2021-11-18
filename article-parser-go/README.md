@@ -18,6 +18,13 @@ go build
 docker-compose up
 ```
 
+## APIs
+
+| Method | Endpoint  |
+|--------|---------- |
+| GET | http://0.0.0.0:7455/article?url={ARTICLE_URL} |
+
+
 
 ## Test
 
