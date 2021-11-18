@@ -17,6 +17,13 @@ docker-compose up
 ```
 
 
+## APIs
+
+| Method | Endpoint  |
+|--------|---------- |
+| GET | http://0.0.0.0:7655/article?url={ARTICLE_URL} |
+
+
 ## Test
 
 ```bash

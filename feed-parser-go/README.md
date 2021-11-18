@@ -18,6 +18,12 @@ go build
 docker-compose up
 ```
 
+## APIs
+
+| Method | Endpoint  |
+|--------|---------- |
+| GET | http://0.0.0.0:7454/feed?url={RSS_URL} |
+
 
 ## Test
 

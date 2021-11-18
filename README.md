@@ -147,7 +147,7 @@ It's recommended to apply Functional Programming style here.
 
 ### Coding convention
 
-- Node.js, JavaScript, Deno: [ESLint recommended rules](https://eslint.org/docs/rules/) and [Google JavaScript Style guide](https://google.github.io/styleguide/jsguide.html)
+- Node.js, JavaScript, Deno: [standardjs](https://standardjs.com/)
 - Python: PEP8
 - Golang: *not defined yet*
 - Vlang: *not defined yet*

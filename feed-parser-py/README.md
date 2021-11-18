@@ -18,6 +18,14 @@ poetry run python3 server.py
 
 Running scripts directly requires [poetry](https://python-poetry.org/).
 
+
+## APIs
+
+| Method | Endpoint  |
+|--------|---------- |
+| GET | http://0.0.0.0:7554/feed?url={RSS_URL} |
+
+
 ## Test
 
 Before running test, please close other instances of `server.py` to avoid port confliction.
