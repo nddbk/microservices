@@ -21,7 +21,7 @@ docker-compose up
 
 | Method | Endpoint  |
 |--------|---------- |
-| GET | http://0.0.0.0:7655/article?url={ARTICLE_URL} |
+| GET | http://0.0.0.0:7351/article?url={ARTICLE_URL} |
 
 
 ## Test

@@ -2,5 +2,5 @@
   "name": "Article Parser service in Go",
   "version": "1.0.0",
   "host": "0.0.0.0",
-  "port": 7455
+  "port": 7251
 }

@@ -22,7 +22,7 @@ docker-compose up
 
 | Method | Endpoint  |
 |--------|---------- |
-| GET | http://0.0.0.0:7454/feed?url={RSS_URL} |
+| GET | http://0.0.0.0:7252/feed?url={RSS_URL} |
 
 
 ## Test

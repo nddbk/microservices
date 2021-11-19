@@ -8,7 +8,7 @@ services:
     image: article-parser-go
     container_name: article-parser-go
     ports:
-      - 7455:7455
+      - 7251:7251
     volumes:
       - .:/go/src/app
     working_dir: /go/src/app

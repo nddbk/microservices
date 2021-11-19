@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: api-gateway-deno
     ports:
-      - 7252:7252
+      - 7150:7150
     working_dir: /app
     networks:
       - micro-net
