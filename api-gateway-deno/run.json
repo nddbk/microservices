@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "deno run --allow-net --allow-read --import-map=import_map.json ./app.ts"
+  },
+  "files": ["./app.ts"]
+}

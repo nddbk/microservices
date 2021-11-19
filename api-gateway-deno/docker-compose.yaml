@@ -13,7 +13,7 @@ services:
       - micro-net
     restart: always
     command: >
-      deno run --allow-net --allow-read app.ts
+      trex run start
 
 networks:
   micro-net:

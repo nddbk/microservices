@@ -6,19 +6,33 @@
 
 ## Setup
 
+We use [trex](https://crewdevio.mod.land/projects/Trex) to manage deno packages, so let's [install it](https://github.com/crewdevio/Trex#installation) first:
+
+```bash
+deno install -A --unstable --import-map=https://deno.land/x/trex/import_map.json -n trex --no-check https://deno.land/x/trex/cli.ts
+
+```
+
+Then clone this repo, go to `api-gateway-deno` folder to install dependencies and start service:
+
+
 ```bash
 git clone https://github.com/ndaidong/microservices.git
 cd  microservices/api-gateway-deno
 
-deno run --allow-net --allow-read app.ts
+# install dependencies
+trex install
 
-# run with docker
+# start
+trex run start
+
+# another way, try to run with docker
 docker-compose up
 ```
 
 ### Configurations
 
-Before starting, the proxy and endpoints should be defined in `service.json`, for example:
+Proxy and the endpoints should be defined in `service.json`, for example:
 
 
 ```json

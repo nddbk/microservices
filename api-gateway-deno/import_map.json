@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "opine": "https://deno.land/x/opine@1.9.1/mod.ts",
+    "opinehttpproxy": "https://deno.land/x/opineHttpProxy@2.9.1/mod.ts"
+  }
+}

@@ -1,7 +1,7 @@
 // app
 
-import { opine } from 'https://deno.land/x/opine@1.9.1/mod.ts';
-import { proxy } from "https://deno.land/x/opineHttpProxy@2.9.1/mod.ts";
+import { opine } from 'opine';
+import { proxy } from 'opinehttpproxy';
 
 import logger from './utils/logger.ts';
 
