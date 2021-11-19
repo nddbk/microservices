@@ -8,7 +8,7 @@ services:
     image: feed-parser-py
     container_name: feed-parser-py
     ports:
-      - 7554:7554
+      - 7451:7451
     volumes:
       - .:/app
     working_dir: /app

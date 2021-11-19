@@ -22,7 +22,7 @@ docker-compose up
 
 | Method | Endpoint  |
 |--------|---------- |
-| GET | http://0.0.0.0:7455/article?url={ARTICLE_URL} |
+| GET | http://0.0.0.0:7251/article?url={ARTICLE_URL} |
 
 
 

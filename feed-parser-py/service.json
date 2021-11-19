@@ -2,5 +2,5 @@
   "name": "Feed Parser service in Python",
   "version": "1.0.0",
   "host": "0.0.0.0",
-  "port": 7554
+  "port": 7452
 }

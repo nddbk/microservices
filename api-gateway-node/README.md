@@ -26,18 +26,13 @@ Before starting, the proxy and endpoints should be defined in `service.json`, fo
   "name": "API Gateway in Node.js",
   "version": "1.0.0",
   "host": "0.0.0.0",
-  "port": 7652,
+  "port": 7350,
   "endpointMap": {
-    "feed": "http://0.0.0.0:7454",
-    "article": "http://0.0.0.0:7455"
+    "feed": "http://0.0.0.0:7351",
+    "article": "http://0.0.0.0:7352"
   }
 }
 ```
-
-Once the gateway starts, we should got:
-
-![](https://i.imgur.com/YdGNLM9.png)
-
 
 ## Test
 

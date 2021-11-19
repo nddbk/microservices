@@ -23,7 +23,7 @@ Running scripts directly requires [poetry](https://python-poetry.org/).
 
 | Method | Endpoint  |
 |--------|---------- |
-| GET | http://0.0.0.0:7555/article?url={ARTICLE_URL} |
+| GET | http://0.0.0.0:7451/article?url={ARTICLE_URL} |
 
 
 ## Test

@@ -40,17 +40,12 @@ Proxy and the endpoints should be defined in `service.json`, for example:
   "name": "API Gateway in Deno",
   "version": "1.0.0",
   "host": "0.0.0.0",
-  "port": 7252,
+  "port": 7150,
   "endpointMap": {
-    "feed": "http://0.0.0.0:7454",
-    "article": "http://0.0.0.0:7455"
+    "feed": "http://0.0.0.0:7151",
+    "article": "http://0.0.0.0:7152"
   }
 }
 ```
-
-Once the gateway starts, we should got:
-
-![](https://i.imgur.com/SlJnHSq.png)
-
 
 ## Test
