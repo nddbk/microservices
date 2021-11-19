@@ -6,71 +6,72 @@ A set of regular microservices for practice and reference.
 
 ### Status
 
-- `Not started yet`: no code base created
-- `Initialized`: setup code base with default router, few lines of doc
-- `Implementing`: working on the functions
-- `Basic implementation`: main function works, but incomplete
-- `Done`: finish main function, standardize data format, fully tested
-
-
 Service | Type | Port | Status
 --|--|--|--
-Front-end GUI | View | 7777 | Not started yet
-Load balancer with Nginx | Routing | 7711|  Not started yet
-Load balancer with Traefic | Routing | 7721 |  Not started yet
-Load balancer with HAProxy | Routing | 7731 |  Not started yet
-API Gateway in Node.js | Routing | 7652 |  Basic implementation
-API Gateway in Python | Routing | 7552 |  Not started yet
-API Gateway in Golang | Routing | 7452 |  Not started yet
-API Gateway in Vlang | Routing | 7352 |  Not started yet
-API Gateway in Deno | Routing | 7252 |  Basic implementation
-Authentication/Authorization service in Node.js | Security | 7653 | Not started yet
-Authentication/Authorization service in Python | Security | 7553 | Not started yet
-Authentication/Authorization service in Golang | Security | 7453 | Not started yet
-Authentication/Authorization service in Vlang | Security | 7353 | Not started yet
-Authentication/Authorization service in Deno | Security | 7253 | Not started yet
-Feed Parser service in Node.js | Extraction | 7654 | Not started yet
-Feed Parser service in Python | Extraction | 7554 | Not started yet
-Feed Parser service in Golang | Extraction | 7454 | Basic implementation
-Feed Parser service in Vlang | Extraction | 7354 | Not started yet
-Feed Parser service in Deno | Extraction | 7254 | Not started yet
-Article Parser service in Node.js | Extraction | 7655 | Basic implementation
-Article Parser service in Python | Extraction | 7555 | Basic implementation
-Article Parser service in Golang | Extraction | 7455 | Basic implementation
-Article Parser service in Vlang | Extraction | 7355 | Not started yet
-Article Parser service in Deno | Extraction | 7255 | Not started yet
-Notification Pusher service in Node.js | Event | 7656| Not started yet
-Notification Pusher service in Python | Event | 7556| Not started yet
-Notification Pusher service in Golang | Event | 7456| Not started yet
-Notification Pusher service in Vlang | Event | 7356| Not started yet
-Notification Pusher service in Deno | Event | 7256| Not started yet
-Email Sender service in Node.js | Event | 7657 | Not started yet
-Email Sender service in Python | Event | 7557 | Not started yet
-Email Sender service in Golang | Event | 7457 | Not started yet
-Email Sender service in Vlang | Event | 7357 | Not started yet
-Email Sender service in Deno | Event | 7257 | Not started yet
-Image Store service in Node.js | File | 7658 | Not started yet
-Image Store service in Python | File | 7558 | Not started yet
-Image Store service in Golang | File | 7458 | Not started yet
-Image Store service in Vlang | File | 7358 | Not started yet
-Image Store service in Deno | File | 7258 | Not started yet
-Video Store service in Node.js | File & Stream | 7659 | Not started yet
-Video Store service in Python | File & Stream | 7559 | Not started yet
-Video Store service in Golang | File & Stream | 7459 | Not started yet
-Video Store service in Vlang | File & Stream | 7359 | Not started yet
-Video Store service in Deno | File & Stream | 7259 | Not started yet
-Face Detection service in Node.js | CV | 7660 | Not started yet
-Face Detection service in Python | CV | 7560 | Not started yet
-Image Classification service in Node.js | CV | 7661 | Not started yet
-Image Classification service in Python | CV | 7561 | Not started yet
-Named Entity Recognition service in Node.js | NLP | 7662 | Not started yet
-Named Entity Recognition service in Python | NLP | 7562 | Not started yet
-Text Classification service in Node.js | NLP | 7663 | Not started yet
-Text Classification service in Python | NLP | 7563 | Not started yet
-Text Classification service in Golang | NLP | 7463 | Not started yet
-Sentiment Analysis service in Node.js | NLP | 7664 | Not started yet
-Sentiment Analysis service in Python | NLP | 7564 | Not started yet
-Sentiment Analysis service in Golang | NLP | 7464 | Not started yet
+Front-end GUI | View | 7777 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Load balancer with Nginx | Routing | 7711 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Load balancer with Traefic | Routing | 7721 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Load balancer with HAProxy | Routing | 7731 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+API Gateway in Node.js | Routing | 7652 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+API Gateway in Python | Routing | 7552 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+API Gateway in Golang | Routing | 7452 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+API Gateway in Vlang | Routing | 7352 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+API Gateway in Deno | Routing | 7252 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+Authentication/Authorization service in Node.js | Security | 7653 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Authentication/Authorization service in Python | Security | 7553 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Authentication/Authorization service in Golang | Security | 7453 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Authentication/Authorization service in Vlang | Security | 7353 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Authentication/Authorization service in Deno | Security | 7253 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Feed Parser service in Node.js | Extraction | 7654 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Feed Parser service in Python | Extraction | 7554 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Feed Parser service in Golang | Extraction | 7454 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+Feed Parser service in Vlang | Extraction | 7354 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Feed Parser service in Deno | Extraction | 7254 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Article Parser service in Node.js | Extraction | 7655 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+Article Parser service in Python | Extraction | 7555 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+Article Parser service in Golang | Extraction | 7455 | ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1)
+Article Parser service in Vlang | Extraction | 7355 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Article Parser service in Deno | Extraction | 7255 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Notification Pusher service in Node.js | Event | 7656| ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Notification Pusher service in Python | Event | 7556| ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Notification Pusher service in Golang | Event | 7456| ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Notification Pusher service in Vlang | Event | 7356| ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Notification Pusher service in Deno | Event | 7256| ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Email Sender service in Node.js | Event | 7657 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Email Sender service in Python | Event | 7557 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Email Sender service in Golang | Event | 7457 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Email Sender service in Vlang | Event | 7357 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Email Sender service in Deno | Event | 7257 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Store service in Node.js | File | 7658 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Store service in Python | File | 7558 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Store service in Golang | File | 7458 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Store service in Vlang | File | 7358 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Store service in Deno | File | 7258 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Video Store service in Node.js | File & Stream | 7659 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Video Store service in Python | File & Stream | 7559 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Video Store service in Golang | File & Stream | 7459 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Video Store service in Vlang | File & Stream | 7359 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Video Store service in Deno | File & Stream | 7259 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Face Detection service in Node.js | CV | 7660 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Face Detection service in Python | CV | 7560 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Classification service in Node.js | CV | 7661 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Image Classification service in Python | CV | 7561 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Named Entity Recognition service in Node.js | NLP | 7662 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Named Entity Recognition service in Python | NLP | 7562 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Text Classification service in Node.js | NLP | 7663 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Text Classification service in Python | NLP | 7563 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Text Classification service in Golang | NLP | 7463 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Sentiment Analysis service in Node.js | NLP | 7664 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Sentiment Analysis service in Python | NLP | 7564 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+Sentiment Analysis service in Golang | NLP | 7464 | ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1)
+
+### Status explaining
+
+- ![Step 0](https://imgshare.io/images/2021/11/18/progressbar-0.png?update=1): `Not started yet`, no code base created
+- ![Step 1](https://imgshare.io/images/2021/11/18/progressbar-1.png): `Initialized`, setup code base with default router, few lines of doc
+- ![Step 2](https://imgshare.io/images/2021/11/18/progressbar-2.png): `Implementing`, working on the functions
+- ![Step 3](https://imgshare.io/images/2021/11/18/progressbar-3.png?update=1): `Basic implementation`, main function works, but incomplete
+- ![Step 4](https://imgshare.io/images/2021/11/18/progressbar-4.png): `Done`, finish main function, standardize data format, fully tested
 
 
 # Tech stacks
@@ -147,10 +148,11 @@ It's recommended to apply Functional Programming style here.
 
 ### Coding convention
 
-- Node.js, JavaScript, Deno: [standardjs](https://standardjs.com/)
-- Python: PEP8
-- Golang: *not defined yet*
-- Vlang: *not defined yet*
+- Node.js, JavaScript: [standardjs](https://standardjs.com/)
+- Python: [PEP8](https://www.python.org/dev/peps/pep-0008/)
+- Golang: default
+- Vlang: default
+- Deno: *not defined yet*
 
 ### Output format
 
